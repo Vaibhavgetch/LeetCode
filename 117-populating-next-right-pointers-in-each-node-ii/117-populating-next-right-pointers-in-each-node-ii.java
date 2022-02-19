@@ -32,6 +32,7 @@ class Solution {
             for(int i = 0 ; i < count ; i++){
                 Node curr = q.remove() ;
                 
+                //Populating next pointer
                 if(i < count - 1){
                     curr.next = q.peek() ;
                 }
