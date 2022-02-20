@@ -10,13 +10,10 @@ class Solution {
         int left = -1, right = -1 ;
         for(int i = 0 ; i < intervals.length ; i++){
             if(intervals[i][0] > left &&  intervals[i][1] > right ){
-                 left = intervals[i][0]; 
-                res++;
+                 left = intervals[i][0];  // 1
+                res++; // 1
             }
-          
             right = Math.max(right,intervals[i][1]);//2
-            
-            
         }
         return res ;
     }
