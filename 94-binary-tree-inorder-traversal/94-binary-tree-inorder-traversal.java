@@ -14,6 +14,10 @@
  * }
  */
 class Solution {
+    
+    // Using Morris Traversal
+    // TC = O(N)
+    // SC = O(1)s
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>() ;
         
